@@ -5,7 +5,7 @@ public class Main {
 
         System.out.println("Задание 1:");
         int sum = 0;
-        for(int i : nums){
+        for (int i : nums) {
             sum += i;
         }
         System.out.println(sum);
@@ -13,13 +13,13 @@ public class Main {
         System.out.println(" ");
 
         System.out.println("Задание 2:");
-        int min = 1000000;
-        int max = 0;
-        for(int i : nums){
-            if(i < min){
+        int min = nums[0];
+        int max = nums[0];
+        for (int i : nums) {
+            if (i < min) {
                 min = i;
             }
-            if (i > max){
+            if (i > max) {
                 max = i;
             }
         }
@@ -29,23 +29,23 @@ public class Main {
         System.out.println(" ");
 
         System.out.println("Задание 3:");
-        float aver = ((float)sum)/nums.length;
+        float aver = ((float) sum) / nums.length;
         System.out.println(aver);
 
         System.out.println(" ");
 
         System.out.println("Задание 4:");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for(int i = reverseFullName.length-1; i >= 0; i--){
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
     }
 
 
-    public static int[] randArray(int[] array){
+    public static int[] randArray(int[] array) {
         java.util.Random random = new java.util.Random();
 
-        for(int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(100000) + 100000;
         }
 
